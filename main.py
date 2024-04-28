@@ -78,7 +78,8 @@ async def process_algorithmic(generator: str = Form(...),
              datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
     if generator == "AlgoGen01":
-        generate_music01(scale=scale, name_of_the_file=name_of_the_file)
+        generate_music01(scale=scale, name_of_the_file=name_of_the_file,
+                         pulse=tempo, duration_sec=duration_sec)
         midi2mp3(name_of_the_file=name_of_the_file)
         return JSONResponse(content={"filename": name_of_the_file})
     elif generator == "AlgoGen02":
@@ -141,3 +142,13 @@ async def download_edited_file(filename: str):
 async def help_generators_type(request: Request):
     return templates.TemplateResponse("help_generators_type.html",
                                       {"request": request})
+
+
+@app.get("/about_us", response_class=HTMLResponse)
+async def about_us(request: Request):
+    return templates.TemplateResponse("about_us.html",
+                                      {"request": request})
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)
