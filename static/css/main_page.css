@@ -87,3 +87,14 @@
     text-align: center;
     padding-bottom: 30px;
 }
+
+.main-title {
+    text-align: center;
+    margin-top: -30px; /* Adjust this value for vertical spacing */
+}
+
+.main-title h1 {
+    font-size: 65px; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: #013a63; /* Adjust the color as needed */
+}

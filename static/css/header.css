@@ -39,7 +39,7 @@ header {
     margin: 30px;
     padding: 20px;
     padding-top: 6px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 
 .navbar-link:hover {
