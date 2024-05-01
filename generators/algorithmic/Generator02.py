@@ -140,7 +140,7 @@ def generate_music02(scale: int, name_of_the_file: int, pulse: str = 'Normal',
     myStream = stream.Stream([right_hand, left_hand])
     myStream.metadata = metadata.Metadata()
     myStream.metadata.title = "Waltz"
-    myStream.metadata.composer = "RESO"
+    myStream.metadata.composer = "Deep Cadence Companion"
     # Write to MIDI and PDF file
     filepath_midi = os.path.join("generated_data", f"{name_of_the_file}.mid")
     filepath_pdf = os.path.join("generated_data", f"{name_of_the_file}.pdf")
