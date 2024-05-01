@@ -11,7 +11,7 @@
 
 body {
     height: 100vh;
-    background-color: white;
+    background-image: url("../images/background.png");
     background-size: cover;
     margin-top: 150px;
 }
