@@ -1,4 +1,4 @@
-# RESO: Algorithmic and Neural Piano Music Generator
+# Deep Cadence Companion
 
 All the information you need is on our website!
 [80.78.243.117:8000/](http://80.78.243.117:8000/)
